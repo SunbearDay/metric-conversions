@@ -1,8 +1,15 @@
 <script setup lang="ts">
+function convertFahrenheitToCelsius(fahrenheit: number): number {
+  return (fahrenheit - 32) / 1.8
+}
+
 function updateCelsius(event: Event) {
-  let target = event.target as HTMLInputElement
-  let celsius = document.querySelector('#celsius') as HTMLInputElement
-  celsius.value = formatConversion(((target.valueAsNumber - 32) / 1.8))
+  let elCelsius = document.querySelector('#celsius') as HTMLInputElement
+  let celsius = convertFahrenheitToCelsius((event.target as HTMLInputElement).valueAsNumber)
+  // let f = (event.target as HTMLInputElement).valueAsNumber
+  // console.log(typeof f)
+  // let celsius = document.querySelector('#celsius') as HTMLInputElement
+  // celsius.value = formatConversion(((target.valueAsNumber - 32) / 1.8))
 }
 
 function updateFahrenheit(event: Event) {
