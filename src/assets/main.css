@@ -1,2 +1,6 @@
 @import './base.css';
 
+input {
+  font-size: var(--font-size-400)
+}
+
