@@ -1,6 +1,5 @@
 <script setup lang="ts">
 function convertFahrenheitToCelsius(fahrenheit: number): number {
-  // return (fahrenheit - 32) / 1.8
   return (5 / 9) * (fahrenheit - 32)
 }
 
@@ -29,7 +28,7 @@ function formatConversion(value: number): string {
 
 <template>
   <div class="container">
-    <h2>Fahrenheit to Celsius Conversions</h2>
+    <h2>Temperature Conversions</h2>
 
     <article class="conversion-input">
       <div>
@@ -50,7 +49,7 @@ function formatConversion(value: number): string {
 
     <article class="info">
       <p>Here's two formulas to calculate fahrenheit to celsius:</p>
-      <p>C = 5/9 x (F - 32)</p>
+      <p>C = (5 / 9) x (F - 32)</p>
       <p>C = (F - 32) / 1.8</p>
     </article>
 
