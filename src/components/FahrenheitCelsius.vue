@@ -1,6 +1,7 @@
 <script setup lang="ts">
 function convertFahrenheitToCelsius(fahrenheit: number): number {
-  return (fahrenheit - 32) / 1.8
+  // return (fahrenheit - 32) / 1.8
+  return (5 / 9) * (fahrenheit - 32)
 }
 
 function convertCelsiusToFahrenheit(celsius: number): number {
